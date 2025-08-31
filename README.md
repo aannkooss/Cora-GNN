@@ -1,5 +1,5 @@
 # GNN for Node Classification on Cora Dataset 
-This project is an implementation of a basic Graph Neural Network (GNN) using PyTorch Geometric to perform node classification on the Cora citation network dataset. The goal is to predict the subject category of a scientific paper based on its content and its relationship to other papers in the network.  
+This project is an implementation of a basic Graph Neural Network (GNN) using PyTorch to perform node classification on the Cora citation network dataset. The goal is to predict the subject category of a scientific paper based on its content and its relationship to other papers in the network.  
 
 ## About the Dataset
 The Cora Dataset is a benchmark for GNNs which represents a network of scientific publications where:  
@@ -11,7 +11,7 @@ The Cora Dataset is a benchmark for GNNs which represents a network of scientifi
 ## Model Architecture 
 The model is a simple but effective Graph Convolutional Network with two layers:  
 1. GCNConv Layer 1 takes the initial 1433 node features and learns a compact 16 dimensional embedding for each node by aggregating information from its immediate neighbors
-2. GCNConv Layer 2 takes the 16 layer embedding and produces the final classification output across hte 7 subject categories  
+2. GCNConv Layer 2 takes the 16 dimensional embedding and produces the final classification output across hte 7 subject categories  
 A `ReLU` activation function and `Dropout` are used between layers to learn complex patterns and prevent overfitting  
 ## How to Run Code 
 Before running the code, please ensure that you have a an installation of Python 3.x, PyTorch, and PyTorch Geometric libraries installed  
@@ -31,3 +31,8 @@ git clone https://github.com/aannkooss/Cora-GNN.git
 pip install -r requirements.txt
 ```
 
+## Execution 
+1. Once the environment is set up, launch Jupyter Notebook from the root of the project directory. 
+```bash 
+jupyter notebook
+```
